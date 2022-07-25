@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+body{
+
+    background-image: radial-gradient(circle,
+     #005774, #03465c, #053646, #062631, #03171d);
+    
+}
+.nav{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color:rgba(3, 3, 3, 0.479) ;
+    width: 100%;
+
+}
+.logo{
+    border-radius: 50px;
+    width: 5vw;
+    margin-left: 5%;
+}
+.nav-list{
+    list-style: none;
+    color: #ffffff ;
+    display:inline-flex; 
+    position: absolute;
+    right: 65px;
+    top: 10px;
+}
+.list-1{
+    margin-right: 30px;
+    font-size: 2vw;
+      
+}
+.headline-1,.headline-2{
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-top: 5px;
+    font-style: italic;
+}
+.headline-1{
+    margin-left: 3%;
+}
+.headline-1::first-letter{
+    color: #005774;
+    font-weight:bolder;
+}
+.headline-2::first-letter{
+    color: #ff8800;
+    font-weight: bolder;
+}
+.list-1:hover{
+    border-bottom: 1px solid #ffffff;
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #21BECF 100%);
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent;
+}
+.full-bus{
+     border: 2px solid rgb(255, 255, 255) ;
+    width: 250px;
+    height: 515px;
+    position: relative;
+    left: 5%;
+    top: 15px;
+    border-radius: 18px;
+    background-color: rgba(3, 3, 3, 0.479);
+    margin: 0% !important; }
+
+.driver{
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    background-color: red;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;  
+    border-radius: 5px; 
+}
+.conductor th{
+
+    padding: 7px;
+    position: absolute;
+    left: 6%;
+    top: 2%;
+    background-color: red;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;  
+    border-radius: 5px; 
+   
+}
+.right{
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    border-collapse: separate !important;
+    padding: 10px;
+}
+td{
+    border: 1px solid white !important;
+    border-collapse: separate !important;
+    padding:7px ;
+    border-radius: 5px;
+    background-color:rgb(44, 97, 255);
+    color: white;
+}
+.left{
+    width: 25%;
+    text-align: center;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    border-collapse: separate !important;
+    padding: 10px;
+}
+.avail{
+background-color: green;
+}
+.avail,.avl:hover{
+    cursor: pointer;
+    
+}
+.ladies{
+    background-color: rgb(255, 255, 0);
+    color: blue;
+}
+.info{
+    color: rgb(243, 236, 236);
+    background-color:rgba(3, 3, 3, 0.479) ;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    right: 10.5%;
+    margin: 0 !important;
+}
+
+.red,.yellow,.green,.blue{
+    width: 12px;
+    height:12px;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+.ticket-content{
+    display: flex;
+    
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: rgb(0, 197, 0);
+}
+.blue{
+    background-color: blue;
+}
+.choose{
+    border-bottom: 1px double rgb(0, 247, 255);
+    width: fit-content;
+}
+.row{
+    margin:0
+}
+input,select{
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    color: black !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 5px !important;
+    border: 1px solid rgb(6, 245, 253);
+    
+}
+small{
+    color: #ff0000;
+}
+.gen{
+    width: 25px;
+    margin: 13px;
+    margin-top: 4px !important;
+}
+.submit{
+    width: 20% !important;
+    background-color: brown;
+    padding: 10px; 
+    color: white !important;
+    margin: 10px; 
+   
+    
+}
+.idcard::placeholder{
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px){
+    .nav-list{
+        display: none;
+    }
+    .submit{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .details{
+        display: none;
+    }
+    
+    .info{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        right: 0;
+        overflow:hidden;    
+    }
+   
+    .full-bus{
+        position: relative ;
+        left: 10%;
+    }
+    .logo{
+        width: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px){
+    .info{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 15px;
+        right: 0;
+        overflow:hidden;    
+    }
+    
+}
+@media only screen and (min-width: 993px){
+    .info{
+        width: 60%;
+        text-align: center;
+        top: 0;
+        right: 0;
+        overflow:hidden; 
+        position: absolute;
+        top: 15%;
+        right: 7%;
+        margin: 0 !important;   
+    }
+    .logo{
+        width: 60px;
+    }
+
+}
+
+
+
+
+
