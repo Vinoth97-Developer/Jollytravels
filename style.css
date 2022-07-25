@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+body{
+   
+    background-image: radial-gradient(circle,
+     #005774, #03465c, #053646, #062631, #03171d);
+}
+.nav{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color:rgba(3, 3, 3, 0.479) ;
+    width: 100%;
+
+}
+.logo{
+    border-radius: 50px;
+    width: 5vw;
+    margin-left: 5%;
+}
+.nav-list{
+    list-style: none ;
+    color: #ffffff ;
+    display:inline-flex; 
+    position: absolute;
+    right: 65px;
+    top: 10px;
+}
+.list-1{
+    margin-right: 30px;
+    font-size: 2vw;
+      
+}
+.headline-1,.headline-2{
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-top: 5px;
+    font-style: italic;
+}
+.headline-1{
+    margin-left: 3%;
+}
+.headline-1::first-letter{
+    color: #005774;
+    font-weight:bolder;
+}
+.headline-2::first-letter{
+    color: #ff8800;
+    font-weight: bolder;
+}
+.list-1:hover{
+    border-bottom: 1px solid #ffffff;
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #21BECF 100%);
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent;
+}
+
+
+.move{
+    color:white;
+    border: 1px solid rgba(3, 3, 3, 0.479);
+    width: 79.5%;
+    margin-left:10%;
+    margin-top: .5%;
+    background-color: rgba(3, 3, 3, 0.479);
+}
+
+a li{
+    list-style-type: circle;
+}
+.place,a{
+    color: white;
+    margin-top: 3%;
+    margin-left: 30%;
+    width: 40%;
+    text-decoration: none !important;
+    
+
+}
+.place:hover{
+    color: rgb(0, 217, 255);
+}
+h4{
+    border: none !important;
+    border-bottom: 2px solid rgb(0, 162, 255) !important ;
+    width: fit-content;
+    padding-bottom: 10px;
+    color: white;
+    margin-top: 3%;
+    margin-left: 30%;
+    
+    
+}
+
+
+.bus-main{
+    width: 100%;
+    border-radius: 15px;
+}
+.move-1{
+    border: 1px solid rgb(0, 162, 255);
+    border-radius: 15px ;
+    height: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    
+}
+.main-row{
+    margin: 0% !important;
+    background-color: rgba(3, 3, 3, 0.479);
+    border: 1px solid rgba(3, 3, 3, 0.479);
+    border-radius: 15px;
+    
+
+}
+.left,.right{
+    padding: 0px !important;
+}
+
+.blink{
+    width:100%;
+    height: 65px;
+    background-color:transparent;
+    padding: 15px;	
+    text-align: center;
+    line-height: 40px;
+}
+.blink-1{
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(5, 217, 255);
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: .2;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+.m-details{
+    display: none ;
+}
+@media screen and (max-width: 400px){
+    .nav-list{
+        display: none;
+    }
+    .destn li{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .blink-1{
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+   
+    .blink-1{
+        font-size: 20px !important;
+    }
+    .logo{
+        width: 50px;
+    }
+    
+  }
+  @media only screen and (min-width: 768px) {
+   
+    .logo{
+        width: 60px;
+    }
+    
+  }
+  
+
+ 
+
+    
